@@ -2,8 +2,6 @@
 
 An end-to-end data engineering pipeline that ingests, transforms, and visualizes food recall data from two federal agencies — the **FDA** and **USDA FSIS** — covering the entire U.S. food supply from 2004 to present.
 
-**[View the Tableau Dashboard](YOUR_TABLEAU_PUBLIC_URL)**
-
 ---
 
 ## Problem Statement
@@ -462,7 +460,7 @@ bq rm -r -f ${PROJECT_ID}:food_recall_gold
 
 ## Dashboard
 
-**[View on Tableau Public](YOUR_TABLEAU_PUBLIC_URL)**
+![Screenshot of a Tableau dashboard.](/docs/tableau-dashboard.png)
 
 The dashboard answers the following questions:
 

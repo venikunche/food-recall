@@ -45,3 +45,6 @@ Thumbs.db
 
 # Parquet files (local testing)
 *.parquet
+
+# CSV files for Tableau
+*.csv
