@@ -14,11 +14,9 @@ Each year, hundreds of food products are recalled in the United States due to co
 This project unifies data from both agencies into a single analytical platform to answer:
 
 - How have food recalls trended over time (2004–present)? Are they increasing?
-- Which recall classifications (Class I = most dangerous) are growing?
 - What are the most common contaminants (Salmonella, Listeria, E. coli, undeclared allergens, foreign objects)?
 - Which contaminants are growing fastest?
 - Which states have the most recalling firms?
-- How do FDA vs. FSIS recalls compare?
 
 ---
 
@@ -467,7 +465,6 @@ The dashboard answers the following questions:
 | Page | Question Answered |
 |---|---|
 | Recall Trends | How have food recalls trended over time? Are they increasing? |
-| Classification Breakdown | Which recall classifications (Class I/II/III) are growing? |
 | Top Contaminants | Which contaminants are most common? |
 | Contaminant Trends | Which contaminants are growing fastest? |
 | Class I by Contaminant | What are the most dangerous recall types? |
