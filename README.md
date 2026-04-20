@@ -319,7 +319,7 @@ Each recall can match multiple categories. A priority-based system assigns the s
 
 ---
 
-## 🚀 How to Reproduce
+## How to Reproduce
 
 ### Prerequisites
 
