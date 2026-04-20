@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: silver
+    database: "foodrecalls"
+    schema: food_recall_silver
+    tables:
+      - name: food_recalls
+
+models:
+  - name: stg_food_recalls
+    description: "Staged food recall data from Silver layer (FDA + FSIS unified)"
+    columns:
+      - name: recall_id
+        description: "Unique recall identifier"
+        tests:
+          - unique
+          - not_null
+      - name: classification
+        description: "Recall hazard classification"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Class I', 'Class II', 'Class III', 'Public Health Alert', 'Not Yet Classified']
+      - name: recall_date
+        description: "Date the recall was initiated"
+        tests:
+          - not_null
+      - name: source_agency
+        description: "FDA or FSIS"
+        tests:
+          - accepted_values:
+              values: ['FDA', 'FSIS']

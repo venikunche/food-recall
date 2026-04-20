@@ -1,0 +1,11 @@
+food_recall:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: foodrecalls
+      dataset: food_recall_gold
+      location: US
+      threads: 4
+      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS') }}"

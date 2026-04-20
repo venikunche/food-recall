@@ -1,0 +1,7 @@
+dlt[duckdb,filesystem]>=1.0.0
+pyarrow>=15.0.0
+pandas>=2.2.0
+google-cloud-storage>=2.14.0
+curl_cffi>=0.7.0
+pyspark>=3.5.0
+dbt-bigquery>=1.8.0

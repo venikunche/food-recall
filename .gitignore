@@ -1,0 +1,47 @@
+# GCP credentials
+config/gcp/service-account.json
+
+# Environment variables
+.env
+
+# Airflow
+airflow/logs/
+airflow/plugins/__pycache__/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# DuckDB (local testing files)
+*.duckdb
+*.duckdb.wal
+
+# dlt pipeline state (local testing)
+dlt_pipelines/
+.dlt/
+
+# dbt
+dbt_food_recall/target/
+dbt_food_recall/dbt_packages/
+dbt_food_recall/logs/
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Parquet files (local testing)
+*.parquet

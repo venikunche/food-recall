@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: fct_recalls
+    description: >
+      Central fact table. One row per recall event.
+      Partitioned by recall_date (month) for time-series queries.
+      Clustered by classification and state for common filter/group-by columns.
+    columns:
+      - name: recall_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_firms
+    description: "Dimension table for recalling firms"
+    columns:
+      - name: firm_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_contaminants
+    description: "Dimension table for contamination categories"
+    columns:
+      - name: contamination_category
+        tests:
+          - unique
+          - not_null
+
+  - name: agg_recalls_by_year
+    description: "Recalls by year, classification, and source agency"
+
+  - name: agg_recalls_by_state
+    description: "Recalls by state with firm counts and Class I counts"
+
+  - name: agg_contaminants_by_year
+    description: "Contaminant trends by year with percentage of total"
+
+  - name: agg_class1_by_contaminant
+    description: "Class I (most dangerous) recalls broken down by contaminant"
